@@ -1,0 +1,14 @@
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Simple authentication (replace with your actual authentication logic)
+    if (username === 'admin' && password === 'password') {
+        document.getElementById('message').innerText = 'Login successful!';
+    } else {
+        document.getElementById('message').innerText = 'Invalid username or password.';
+    }
+});
+
+
